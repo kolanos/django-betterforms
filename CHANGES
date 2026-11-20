@@ -1,3 +1,11 @@
+1.2.3 (unreleased)
+------------------
+
+- Read ``__version__`` with ``importlib.metadata`` instead of the deprecated
+  ``pkg_resources`` API, which setuptools 81 removes.
+- Require Python 3.8+.
+
+
 1.2.1 (unreleased)
 ------------------
 
