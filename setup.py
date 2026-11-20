@@ -6,7 +6,7 @@ __doc__ = """
 App for Django featuring improved form base classes.
 """
 
-version = '1.2.2'
+version = '1.2.3'
 
 
 def read(fname):
@@ -24,6 +24,7 @@ setup(
     packages=[package for package in find_packages()
               if package.startswith('betterforms')],
     install_requires=['Django>=1.8', 'six'],
+    python_requires='>=3.8',
     zip_safe=False,
     include_package_data=True,
     classifiers=[
@@ -37,12 +38,8 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3 :: Only',
         'Topic :: Internet :: WWW/HTTP',
     ],
 )
